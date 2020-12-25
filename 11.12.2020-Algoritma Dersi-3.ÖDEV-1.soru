@@ -1,4 +1,4 @@
-#include <stdio.h>  //Girilen sayılardan çift olanları toplayıp , en büyüğe bölen koddur. 11.12.2020-Algoritma Dersi-3.ÖDEV-1.soru
+#include <stdio.h>  //Girilen sayÄ±lardan Ã§ift olanlarÄ± toplayÄ±p , en bÃ¼yÃ¼ÄŸe bÃ¶len koddur. 11.12.2020-Algoritma Dersi-3.Ã–DEV-1.soru
 #include <conio.h>
 
 
