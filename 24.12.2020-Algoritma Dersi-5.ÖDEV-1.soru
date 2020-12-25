@@ -1,4 +1,4 @@
-#include <stdio.h>  // Fonksiyon oluşturarak kombinasyon işlemini uygular.24.12.2020-Algoritma Dersi-5.ÖDEV-1.soru
+#include <stdio.h>  // Fonksiyon oluÃ¾turarak kombinasyon iÃ¾lemini uygular.24.12.2020-Algoritma Dersi-5.Ã–DEV-1.soru
 #include <conio.h>
 #include <inttypes.h>
 
@@ -26,8 +26,8 @@ scanf("%d",&b);
 
 c=Kmbnsyn(a,b);
 
-printf("%d'nin %d'li kombinasyonu...:\n%lld",a,b,c); //Çok büyük sayılar olmasada 1000'den sonraki sayılarda çıktıyı doğru vermiyor, bu yüzden long long int kullandım.
-                                                    //internette %lld ve #include <inttypes.h> kütüphanesi kullanılması yazılmış ama işe yaramadı.
+printf("%d'nin %d'li kombinasyonu...:\n%lld",a,b,c); //Ã‡ok bÃ¼yÃ¼k sayÃ½lar olmasada 1000'den sonraki sayÃ½larda Ã§Ã½ktÃ½yÃ½ doÃ°ru vermiyor, bu yÃ¼zden long long int kullandÃ½m.
+                                                    //internette %lld ve #include <inttypes.h> kÃ¼tÃ¼phanesi kullanÃ½lmasÃ½ yazÃ½lmÃ½Ã¾ ama iÃ¾e yaramadÃ½.
 getch();
 return 0;
 }
