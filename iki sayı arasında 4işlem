@@ -1,4 +1,4 @@
-#include <stdio.h>      //A,B gibi iki sayı arasında 4 işlem yapabilen koddur.
+#include <stdio.h>      //A,B gibi iki sayı arasında 4 işlem yapabilen koddur.13.11.2020-Algoritma Dersi-1.ÖDEV-3.soru
 #include <conio.h>
 
 int main() {
