@@ -1,4 +1,4 @@
-#include<stdio.h> //Girilen harf küçükse büyüğe büyükse küçüğe çevirir.17.12.2020-Algoritma Dersi-4.ÖDEV-3.soru
+#include<stdio.h> //Girilen harf kÃ¼Ã§Ã¼kse bÃ¼yÃ¼ÄŸe bÃ¼yÃ¼kse kÃ¼Ã§Ã¼ÄŸe Ã§evirir.17.12.2020-Algoritma Dersi-4.Ã–DEV-3.soru
 int main(){
 	int i=0,fark='a'-'A';
 	char metin[100];
