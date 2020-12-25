@@ -1,4 +1,4 @@
-#include <stdio.h> // Vize,Final,Bütünleme verileri ile dersi geçtiðinizi kontrol eden koddur.20.11.2020-Algoritma Dersi-2.ÖDEV-1.soru
+#include <stdio.h> // Vize,Final,BÃ¼tÃ¼nleme verileri ile dersi geÃ§tiÄŸinizi kontrol eden koddur.20.11.2020-Algoritma Dersi-2.Ã–DEV-1.soru
 #include <conio.h>
 
 int main(){
