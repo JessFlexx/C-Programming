@@ -1,4 +1,4 @@
-#include <stdio.h> // A,B gibi iki sayının karşılaştırılması.
+#include <stdio.h> // A,B gibi iki sayının karşılaştırılması.13.11.2020-Algoritma Dersi-1.ÖDEV-2.soru
 
 int main() {
   int a, b;
