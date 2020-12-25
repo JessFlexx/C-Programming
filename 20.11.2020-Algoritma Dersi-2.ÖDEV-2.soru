@@ -1,4 +1,4 @@
-#include <stdio.h> // Girilen sayıya kadar olan çift tam sayıların toplamını ve ortalamasını veren koddur.20.11.2020-Algoritma Dersi-2.ÖDEV-2.soru
+#include <stdio.h> // Girilen sayÄ±ya kadar olan Ã§ift tam sayÄ±larÄ±n toplamÄ±nÄ± ve ortalamasÄ±nÄ± veren koddur.20.11.2020-Algoritma Dersi-2.Ã–DEV-2.soru
 
 #include <conio.h>
 
