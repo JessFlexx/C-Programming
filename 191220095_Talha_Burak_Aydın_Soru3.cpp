@@ -1,0 +1,34 @@
+#include <stdio.h> //Girilen sayýnýn asal sayý olmasýný kontrol eden fonksiyondur.24.12.2020-Algoritma Dersi-5.ÖDEV-3.soru
+#include <conio.h>
+
+int yAsal(int a){
+int k=0;
+
+for(int i=2;i<a;i++){
+	
+	if(a%i==0){
+		printf("Girdiginiz sayi asal degildir.");
+		k++;
+		break;
+	}
+	
+}
+	if(k==0)
+	printf("Girdiginiz sayi asaldir.");
+return 0;
+}
+
+int main(){
+	int sayi;
+	
+	printf("Sayi giriniz...:\n");
+	scanf("%d",&sayi);
+	yAsal(sayi);
+
+getch();
+return 0;
+}
+
+
+
+ 
