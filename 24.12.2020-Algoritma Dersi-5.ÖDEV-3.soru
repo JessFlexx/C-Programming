@@ -1,4 +1,4 @@
-#include <stdio.h> //Girilen sayının asal sayı olmasını kontrol eden fonksiyondur.24.12.2020-Algoritma Dersi-5.ÖDEV-3.soru
+#include <stdio.h> //Girilen sayÃ½nÃ½n asal sayÃ½ olmasÃ½nÃ½ kontrol eden fonksiyondur.24.12.2020-Algoritma Dersi-5.Ã–DEV-3.soru
 #include <conio.h>
 
 int yAsal(int a){
