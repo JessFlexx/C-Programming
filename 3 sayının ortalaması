@@ -1,4 +1,4 @@
-#include <stdio.h> // 3 sayýnýn ortalamasý. 13.11.2020-Algoritma Dersi-1.ÖDEV-1.soru
+#include <stdio.h> // 3 sayÄ±nÄ±n ortalamasÄ±. 13.11.2020-Algoritma Dersi-1.Ã–DEV-1.soru
 
 int main (){
 	
