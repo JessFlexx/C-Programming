@@ -1,0 +1,35 @@
+#include <stdio.h> // Girilen sayýya kadar olan çift tam sayýlarýn toplamýný ve ortalamasýný veren koddur.20.11.2020-Algoritma Dersi-2.ÖDEV-2.soru
+
+#include <conio.h>
+
+int main(){
+	
+	int a,b,toplam=0,ort,Scift;
+	
+	printf("Bu program girdiginiz pozitif tam sayiyaya kadar olan cift tam sayilarin toplamini ve ortalamasini hesaplar\nGirmek istediginiz sayiyi yaziniz: ");
+	scanf("%d",&b);
+	if(b==1||b==0){
+	printf("Cift sayilarin toplami: 0\nCift sayilarin ortalamasi: 0");
+	}
+	else if (b<0){
+	printf("Lutfen pozitif tam sayi giriniz.");
+    }
+    else{
+    	for (a=0;a<=b;a+=2){
+		Scift++;
+		toplam=a+toplam;
+	}
+	
+	Scift=Scift-1;
+	ort=toplam/Scift;
+	
+    printf("Cift sayilarin toplami: %d\n",toplam);
+    printf("Cift sayilarin ortalamasi: %d / %d = %d\n",toplam,Scift,ort);
+    printf("Dipnot:0 sayisi toplama isleminde etkisiz eleman oldugu icin ortalama hesabi yapilirken dikkate alinmamistir. ");
+	}
+	
+
+	getch();
+	return 0;
+}
+
