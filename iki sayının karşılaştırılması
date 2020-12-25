@@ -1,4 +1,4 @@
-#include <stdio.h> // A,B gibi iki sayının karşılaştırılması.
+#include <stdio.h> // A,B gibi iki sayÄ±nÄ±n karÅŸÄ±laÅŸtÄ±rÄ±lmasÄ±.
 
 int main() 
 
