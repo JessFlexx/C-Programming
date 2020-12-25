@@ -1,11 +1,7 @@
 #include <stdio.h> // A,B gibi iki sayının karşılaştırılması.
 
-int main() 
-
-
-  {
-  	
-  	int a, b;
+int main() {
+  int a, b;
 	
 	printf("Karsilastirmak istediginiz sayilardan birincisini giriniz : ");
 	scanf("%d",&a);
@@ -25,22 +21,4 @@ printf("Girdiginiz iki sayi biribirine esittir.");
 
 
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	return 0;
-}
+return 0;}
