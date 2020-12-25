@@ -1,4 +1,4 @@
-#include <stdio.h> // Girilen sayının basamaklarını toplayan fonksiyon.24.12.2020-Algoritma Dersi-5.ÖDEV-2.soru
+#include <stdio.h> // Girilen sayÃ½nÃ½n basamaklarÃ½nÃ½ toplayan fonksiyon.24.12.2020-Algoritma Dersi-5.Ã–DEV-2.soru
 #include <conio.h>
 
 int toplabsmk (int a){
