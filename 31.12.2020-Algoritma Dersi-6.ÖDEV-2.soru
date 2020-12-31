@@ -13,12 +13,12 @@ int main(void){
 		char ad[40];
 		char soyad[40];
 		int no;
-		struct ders dersler[2];
+		struct ders dersler[5];
 		
 	};
-	struct sahis_bilgileri ogrenci[2];
+	struct sahis_bilgileri ogrenci[5];
 	
-	for(int i=0;i<2;i++){
+	for(int i=0;i<5;i++){
 	
 	printf("\n#### %d.Ogrencinin Bilgileri !!! ####\n\n",i+1);		
 		
@@ -31,7 +31,7 @@ int main(void){
     printf("%d.Ogrencinin numarasini giriniz...\n",i+1);
     scanf("%d",&ogrenci[i].no);
     
-    for(int j=0;j<2;j++){
+    for(int j=0;j<5;j++){
     	
     printf("%d.Ogrencinin %d. dersinin kodunu giriniz...\n",i+1,j+1);
     scanf("%d",&ogrenci[i].dersler[j].ders_kod);
@@ -53,12 +53,12 @@ int main(void){
 	
         printf("############ OGRENCI VERILERI  ############\n");		
 		int a=0;
-		for(int i=0;i<2;i++,a++){
+		for(int i=0;i<5;i++,a++){
 		printf("\n######################\n\n");	
 		printf("%d.Ogrencinin adi ve soy adi ->%s %s\n",a+1,ogrenci[i].ad,ogrenci[i].soyad);
 		printf("%d.Ogrenci No ->%d\n",a+1,ogrenci[i].no);
 		
-		for(int j=0;j<2;j++){
+		for(int j=0;j<5;j++){
 		
 		printf("%d.Ogrencinin %d kodlu dersinin;\nGecme notu->%.2f\n",a+1,ogrenci[i].dersler[j].ders_kod,ogrenci[i].dersler[j].gecmenotu);
 		
