@@ -1,0 +1,69 @@
+#include <stdio.h>
+
+int main(void){
+
+	
+	struct ders{
+		int ders_kod;
+		int vize;
+		int final;
+		float gecmenotu; 
+	};
+	struct sahis_bilgileri{
+		char ad[40];
+		char soyad[40];
+		int no;
+		struct ders dersler[2];
+		
+	};
+	struct sahis_bilgileri ogrenci[2];
+	
+	for(int i=0;i<2;i++){
+	
+	printf("\n#### %d.Ogrencinin Bilgileri !!! ####\n\n",i+1);		
+		
+	printf("%d.Ogrencinin adini giriniz...\n",i+1);
+    scanf("%s",ogrenci[i].ad);
+    
+	printf("%d.Ogrencinin soy adini giriniz...\n",i+1);
+    scanf("%s",ogrenci[i].soyad);
+    
+    printf("%d.Ogrencinin numarasini giriniz...\n",i+1);
+    scanf("%d",&ogrenci[i].no);
+    
+    for(int j=0;j<2;j++){
+    	
+    printf("%d.Ogrencinin %d. dersinin kodunu giriniz...\n",i+1,j+1);
+    scanf("%d",&ogrenci[i].dersler[j].ders_kod);
+    
+    printf("%d.Ogrencinin %d. dersinin vize notunu giriniz...\n",i+1,j+1);
+    scanf("%d",&ogrenci[i].dersler[j].vize);
+    
+    printf("%d.Ogrencinin %d. dersinin final notunu giriniz...\n",i+1,j+1);
+    scanf("%d",&ogrenci[i].dersler[j].final);
+    
+    
+    
+    ogrenci[i].dersler[j].gecmenotu =(float) ( 0.6 * ogrenci[i].dersler[j].final ) + ( 0.4 * ogrenci[i].dersler[j].vize );
+    
+	}
+	
+    printf("\n#### %d.Ogrencinin bilgileri kayit edildi !!! ####\n\n",i+1);
+	}
+	
+        printf("############ OGRENCI VERILERI  ############\n");		
+		int a=0;
+		for(int i=0;i<2;i++,a++){
+		printf("\n######################\n\n");	
+		printf("%d.Ogrencinin adi ve soy adi ->%s %s\n",a+1,ogrenci[i].ad,ogrenci[i].soyad);
+		printf("%d.Ogrenci No ->%d\n",a+1,ogrenci[i].no);
+		
+		for(int j=0;j<2;j++){
+		
+		printf("%d.Ogrencinin %d kodlu dersinin;\nGecme notu->%.2f\n",a+1,ogrenci[i].dersler[j].ders_kod,ogrenci[i].dersler[j].gecmenotu);
+		
+		}
+		printf("\n######################\n\n");
+		}
+		
+		return 0;}
