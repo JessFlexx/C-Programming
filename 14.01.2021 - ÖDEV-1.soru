@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int primenumb(int a){
+int numbers[10],counter=0,k=0;
+
+while(counter<=10){ // 10 tane asal bulana kadar devam et.
+a++;// a'dan sonraki sayıları incelemek için tek tek arttırıyoum
+for(int i=2;i<a;i++){ // Sayının kendisinden öncekli sayılarla modunun döngüsü.
+	if(a%i==0){  
+	k++;   //K -> 1 ve 0 olarak kullandığım kontrol basamağı.
+	break;   //Mod 0 sa direkt döngüden çıksın.
+	}
+}
+	if(k==0){
+		numbers[counter]=a;
+		counter+=1; //K==0 Sa asal sayıdır. Asal sayı bulunduğunda Sayacı arttırıyoum.
+		k=0; // İşlemi başa almak için K'yı sıfırlıyorum.
+	}
+}
+	
+	for(int t=0;t<10;t++){  //Yazdırma basamağı.
+	printf("%d.Asal -> %d \n",t+1,numbers[t]);}
+	
+return 0; //0'mı olmalı tam emin değilim.
+}
+
+int main (){
+	
+	int i;
+	printf("Bir sayi giriniz...");
+	scanf("%d",&i);
+	primenumb(i);
+		
+		return 0;
+		}
+	
