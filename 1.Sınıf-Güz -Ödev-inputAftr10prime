@@ -1,0 +1,32 @@
+#include <stdio.h> // Girilen sayıdan sonraki 10 asal sayıyı bul.
+#include <conio.h>
+
+bool primenumb(int a){
+    if(a<2) return 0;
+    
+	for(int i=2;i<=a/2;i++) 
+	
+	if(a%i==0) return 0;
+    
+	return 1;
+}
+
+int main(){
+    
+	int i,prnumbs[10];
+    
+    printf("Sayi giriniz...");
+	scanf("%d",&i);
+    
+	i++;
+    for(int j=0;j<10;i++)
+	    if(primenumb(i)==1) {
+        prnumbs[j]=i;
+        j++;}
+    
+	for(int k=0;k<10;k++) 
+	printf("%d.Asal -> %d\n",k+1,prnumbs[k]);   
+
+getch();	 
+return 0;
+}
