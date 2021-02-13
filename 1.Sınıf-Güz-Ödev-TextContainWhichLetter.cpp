@@ -1,4 +1,4 @@
-#include <stdio.h>  // Kullanıcıdan metin girdisi al.Hangi harften kaç tane girildiğini bul.
+#include <stdio.h>  // KullanÄ±cÄ±dan metin girdisi al.Hangi harften kaÃ§ tane girildiÄŸini bul.
 #include <stdlib.h>
 
 int main(){
@@ -19,7 +19,7 @@ int k,i,count=0;
 if(count>0)
 printf("%c karakteri %d kere kullanilmistir.\n",harf,count);
      
-harf=count=0; //Döngünün kontrol dğeişkenlerini sıfırlama
+harf=count=0; //DÃ¶ngÃ¼nÃ¼n kontrol dÄŸeiÅŸkenlerini sÄ±fÄ±rlama
 }
 
 return 0;
