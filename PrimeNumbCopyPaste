@@ -3,9 +3,11 @@
 
 int main ()
 {
+ 
   FILE *fp1,*fp2;
   int numb,count=0;
   
+
   fp1 = fopen ("sayilar.txt", "r");
   fp2 = fopen ("sayilar2.txt", "w");
  
@@ -20,21 +22,30 @@ int main ()
       return 0;
   }
   
+  
+  
   for (int i=1;i<=100;i++){
   	
-     fscanf(fp1,"%d\n",&numb);
-     for (i=2;i<numb;i++){
-          
-	  if(numb%i==0){
+	fscanf(fp1,"%d\n",&numb);
+  	   
+	for (int a=2;a<numb;a++){
+  		
+	  if(numb%a==0){
 	  count++;
-	  break;}
-	
+	  break;
+	  }
 	}
 	
 	if(count==0){fprintf(fp2,"%d\n",numb);}
   	else{count=0;}
 	
 	}
-  	getch();
-        return 0;
+  	
+	fclose(fp1);
+  	fclose(fp2);
+  	printf("'sayilar.txt' dosyasindaki asal sayilar\n'sayilar2.txt' dosyasina basariyla yazildi!");
+	getch();
+    return 0;
   }
+  
+  
