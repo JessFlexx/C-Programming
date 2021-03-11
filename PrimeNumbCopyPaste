@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <conio.h>
 
-int main ()
+int main ()  
 {
  
-  FILE *fp1,*fp2;
-  int numb,count=0;
+  FILE *fp1,*fp2;       //TxtIncludeRandom100 başlıklı kod ile bağlantılıdır. Öncelikle bağlantılı kod çalıştırılarak sayilar.txt dosyası oluşturulur. 
+  int numb,count=0;    //Bu sayfada yazılan kod ile de sayilar.txt dosyası baz alınarak asal sayılardan oluşan bir sayilar2.txt dosyası oluşturulur.
   
 
   fp1 = fopen ("sayilar.txt", "r");
