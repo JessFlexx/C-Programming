@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <time.h> 
+
+int main ()
+{
+  srand(time(NULL));
+  FILE *fp1;
+  int numbs;
+
+  fp1 = fopen ("sayilar.txt", "w");
+ 
+  if (fp1 == NULL) {
+      printf("Dosya açma hatası!");
+      getch();
+      return 0;
+  }
+  
+  for (int i=1;i<=100;i++){
+  	numbs = rand()%100 + 1; 
+    fprintf(fp1,"%d\n",numbs);
+	}
+  
+  
+  printf("Basariyla 'sayilar.txt' dosyasi olusturuldu.");
+  fclose(fp1);
+  
+    getch();
+    return 0;
+  }
+  
