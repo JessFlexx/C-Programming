@@ -3,11 +3,9 @@
 
 int main ()
 {
- 
   FILE *fp1,*fp2;
   int numb,count=0;
   
-
   fp1 = fopen ("sayilar.txt", "r");
   fp2 = fopen ("sayilar2.txt", "w");
  
@@ -22,27 +20,21 @@ int main ()
       return 0;
   }
   
-  
-  
   for (int i=1;i<=100;i++){
   	
-	fscanf(fp1,"%d\n",&numb);
-  	   
-	for (i=2;i<numb;i++){
-  		
+     fscanf(fp1,"%d\n",&numb);
+     for (i=2;i<numb;i++){
+          
 	  if(numb%i==0){
 	  count++;
-	  break;
-	  }
+	  break;}
+	
 	}
 	
 	if(count==0){fprintf(fp2,"%d\n",numb);}
   	else{count=0;}
 	
 	}
-  	
-	
-  
-	getch();
-    return 0;
+  	getch();
+        return 0;
   }
