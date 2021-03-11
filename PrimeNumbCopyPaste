@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main ()
+{
+ 
+  FILE *fp1,*fp2;
+  int numb,count=0;
+  
+
+  fp1 = fopen ("sayilar.txt", "r");
+  fp2 = fopen ("sayilar2.txt", "w");
+ 
+  if (fp1 == NULL) {
+      printf("Dosya acma hatasi!");
+      getch();
+      return 0;
+  }
+  if (fp2 == NULL) {
+      printf("2.Dosya açma hatası!");
+      getch();
+      return 0;
+  }
+  
+  
+  
+  for (int i=1;i<=100;i++){
+  	
+	fscanf(fp1,"%d\n",&numb);
+  	   
+	for (i=2;i<numb;i++){
+  		
+	  if(numb%i==0){
+	  count++;
+	  break;
+	  }
+	}
+	
+	if(count==0){fprintf(fp2,"%d\n",numb);}
+  	else{count=0;}
+	
+	}
+  	
+	
+  
+	getch();
+    return 0;
+  }
